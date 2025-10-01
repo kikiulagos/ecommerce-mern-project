@@ -1,0 +1,40 @@
+.milogo {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+}
+
+
+.milogo img {
+    width: 70px; 
+    height: auto; 
+}
+
+
+.nombre {
+    font-size: 24px; 
+    color: #000; 
+    margin-left: 10px; 
+    font-family: 'Arial', sans-serif; 
+}
+
+@media (max-width: 768px) {
+    .milogo img {
+        width: 50px; 
+    }
+
+    .nombre {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .milogo img {
+        width: 40px; 
+    }
+
+    .nombre {
+        font-size: 16px; 
+        margin-left: 5px; 
+    }
+}

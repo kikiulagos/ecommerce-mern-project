@@ -1,0 +1,54 @@
+######################
+# SEGURIDAD (¡CRÍTICO!)
+######################
+# NUNCA subir las claves de DB, APIs, secretos JWT, etc.
+.env
+.env.*
+.env.local
+
+######################
+# DIRECTORIOS Y LOGS
+######################
+# Directorios de dependencias
+node_modules/
+
+# Directorios de compilación/salida
+dist
+dist-ssr
+# Si usas Vite o React en el front:
+/frontend/dist
+/frontend/build
+# Si usas Node en el back:
+/backend/dist
+/backend/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+######################
+# CONFIGURACIÓN Y CACHÉ
+######################
+# Archivos de caché del build (vite, webpack, etc.)
+*.local
+.vite/
+.eslintcache
+
+# Archivos de sesión/DB local (Si no usas MongoDB Atlas)
+*.sqlite
+*.sqlite3
+/sessions
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

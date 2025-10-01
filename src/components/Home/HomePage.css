@@ -1,0 +1,27 @@
+.carousel .carousel-item {
+    height: 500px; 
+}
+.carousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.carousel-caption h3 {
+    font-size: 2rem;
+    color: #fff; 
+}
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: #f8f9fa; 
+}
+@media (max-width: 768px) {
+    .carousel .carousel-item {
+        height: 300px; 
+    }
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,33 @@
+.title-container {
+    text-align: left; 
+    margin-top: 100px;
+    margin-left: 370px;
+    margin-bottom: 200px; 
+}
+
+.title-text {
+    font-size: 2em; 
+    color: #333; 
+    margin: 0; 
+}
+
+
+@media (max-width: 768px) {
+    .title-text {
+        font-size: 1.5em; 
+    }
+
+    .title-container {
+        margin: 15px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title-text {
+        font-size: 1.2em; 
+    }
+
+    .title-container {
+        margin: 10px 0; 
+    }
+}
