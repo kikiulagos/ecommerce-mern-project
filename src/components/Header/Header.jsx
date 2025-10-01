@@ -5,7 +5,7 @@ import { useCartStore } from '../../Stores/CartStores';
 import { useUserStore } from '../../Stores/UserStore';
 import Logo from '../Logo/Logo';
 import Navbar from '../Navbar/Navbar';
-import Cart from '../Cart/Cart';
+import Cart from '../Cart/Cart'
 
 function HamburgerIcon({ isOpen, toggleMenu }) {
     return (

@@ -18,7 +18,7 @@ export default function ItemDetail() {
             setLoading(true);
             setError(null);
             try {
-                const response = await fetch(`http://localhost:5000/api/products/${productId}`);
+                const response = await fetch(`http://localhost:5001/api/products/${productId}`);
                 if (!response.ok) throw new Error('Producto no encontrado');
                 const data = await response.json();
                 setProduct(data);

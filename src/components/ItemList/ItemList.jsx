@@ -11,9 +11,9 @@ export default function ItemList({ products, selectedCategory, onAddToCart }) {
     useEffect(() => {
         if (!products) {
             setLoading(true);
-            let url = 'http://localhost:5000/api/products';
+            let url = 'http://localhost:5001/api/products';
             if (selectedCategory && selectedCategory !== 'Todos') {
-                url = `http://localhost:5000/api/products/category/${encodeURIComponent(selectedCategory)}`;
+                url = `http://localhost:5001/api/products/category/${encodeURIComponent(selectedCategory)}`;
             }
 
             fetch(url)
@@ -43,7 +43,7 @@ export default function ItemList({ products, selectedCategory, onAddToCart }) {
                     {displayedProducts.map((prod) => (
                         <Item 
                             key={prod._id} 
-                            id={prod._id}   // <-- MongoDB _id
+                            id={prod._id}  
                             name={prod.name} 
                             price={prod.price} 
                             discountPrice={prod.discountPrice} 

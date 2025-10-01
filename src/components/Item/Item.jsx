@@ -11,7 +11,7 @@ export default function Item({ id, name, price, discountPrice, img }) {
     const quantity = productInCart ? productInCart.quantity : 0;
 
     return (
-        <div className="relative flex flex-col items-center my-4 mx-auto px-4 py-4 border border-gray-200 rounded-lg shadow-lg w-[260px] text-center">
+        <div className="relative flex flex-col items-center my-4 mx-auto px-4 py-4 border border-gray-200 rounded-lg shadow-lg w-[260px] text-center overflow-hidden">
             <Link to={`/products/${id}`} className="w-full flex justify-center">
                 <img 
                     src={img} 
@@ -28,7 +28,7 @@ export default function Item({ id, name, price, discountPrice, img }) {
 
             <Link 
                 to={`/products/${id}`} 
-                className="text-[20px] font-bold my-3 tracking-[4px] uppercase text-[#030303] hover:text-[rgb(100,99,95)]"
+                className="block w-full truncate text-[20px] font-bold my-3 tracking-[4px] uppercase text-[#030303] hover:text-[rgb(100,99,95)]"
             >
                 {name} {quantity > 0 && <span className="text-sm text-gray-500">x{quantity}</span>}
             </Link>

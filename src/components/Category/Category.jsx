@@ -14,9 +14,9 @@ export default function ProductsCategory() {
             setLoading(true);
             setError(null);
 
-            let url = 'http://localhost:5000/api/products';
+            let url = 'http://localhost:5001/api/products';
             if (categoryId && categoryId !== 'Todos') {
-                url = `http://localhost:5000/api/products/category/${encodeURIComponent(categoryId)}`;
+                url = `http://localhost:5001/api/products/category/${encodeURIComponent(categoryId)}`;
             }
 
             try {

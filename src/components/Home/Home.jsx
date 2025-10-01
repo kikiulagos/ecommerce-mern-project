@@ -26,7 +26,7 @@ export default function HomePage() {
                
                 const productArray = data.products || data; 
 
-                // Verificamos que sea un array antes de establecer el estado
+                
                 if (Array.isArray(productArray)) {
                     setProducts(productArray);
                     setPopularProducts(productArray.slice(0, 5));

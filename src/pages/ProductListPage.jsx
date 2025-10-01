@@ -76,7 +76,7 @@ export default function ProductListPage() {
     useEffect(() => {
         const fetchProductsFromNode = async () => {
             try {
-                const response = await fetch('/api/products'); 
+                const response = await fetch('http://localhost:5001/api/products'); 
 
                 if (!response.ok) {
                     throw new Error(`Error HTTP: ${response.status} - ${response.statusText || 'Error al conectar'}`);

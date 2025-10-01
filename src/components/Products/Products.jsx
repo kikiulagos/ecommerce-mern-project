@@ -3,7 +3,7 @@ import ItemList from '../ItemList/ItemList';
 import CategoryList from '../CategoryList/CategoryList';
 import Loading from '../Loading/Loading';
 
-const DEFAULT_CATEGORIES = ['Todos', 'Ropa', 'Electrónica', 'Calzado', 'Accesorios'];
+const DEFAULT_CATEGORIES = [ 'Ropa', 'Electrónica', 'Calzado', 'Accesorios'];
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -21,9 +21,9 @@ export default function ProductsPage() {
       setError(null);
 
       try {
-        let url = 'http://localhost:5000/api/products';
+        let url = 'http://localhost:5001/api/products';
         if (selectedCategory && selectedCategory !== 'Todos') {
-          url = `http://localhost:5000/api/products/category/${encodeURIComponent(selectedCategory)}`;
+          url = `http://localhost:5001/api/products/category/${encodeURIComponent(selectedCategory)}`;
         }
 
         const res = await fetch(url);

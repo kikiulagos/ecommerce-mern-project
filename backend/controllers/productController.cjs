@@ -39,7 +39,7 @@ const createProduct = async (req, res) => {
     price: req.body.price,
     category: req.body.category,
     stock: req.body.stock,
-    img: req.body.img, // <-- ¡Cambiado de imageUrl a img!
+    img: req.body.img, 
   });
 
   try {
@@ -64,8 +64,8 @@ const updateProduct = async (req, res) => {
     if (req.body.price != null) product.price = req.body.price;
     if (req.body.category != null) product.category = req.body.category;
     if (req.body.stock != null) product.stock = req.body.stock;
-    if (req.body.img != null) product.img = req.body.img; // <-- ¡Cambiado de imageUrl a img!
-
+    if (req.body.img != null) product.img = req.body.img; 
+    
     const updatedProduct = await product.save();
     res.json(updatedProduct);
   } catch (err) {
